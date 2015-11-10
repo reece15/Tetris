@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+    <frame title = "俄罗斯方块V1.0 BY 0XCCH" up = "16" width = "1162" height = "694" 
+    padding = "16" size = "7" sizeRol = "5" loseIdx = "8" >
+        <button w = "110" h = "40">
+        	<start x = "820" y = "40"/>
+        	<config x = "985" y = "40" />
+        </button>
+        <bars class = "ui.BarsBg" x = "0" y = "0" w = "1162" h = "674" />
+        <bars class = "ui.BarsWorld" x = "40" y = "32" w = "334" h = "279" />
+        <bars class = "ui.BarsLocal" x = "40" y = "343" w = "334" h = "279" />
+        <bars class = "ui.BarsGame" x = "414" y = "32" w = "334" h = "590" />
+        <bars class = "ui.BarsButton" x = "788" y = "32" w = "334" h = "60" />
+        <bars class = "ui.BarsNext" x = "788" y = "132" w = "176" h = "116" />
+        <bars class = "ui.BarsLevel" x = "964" y = "132" w = "158" h = "116" />
+        <bars class = "ui.BarsPoint" x = "788" y = "280" w = "334" h = "160" />
+        <bars class = "ui.BarsAbout" x = "788" y = "472" w = "334" h = "144" />
+    </frame>
+
+    <system maxX = "9" minX = "0" maxY = "17" minY = "0" levelup = "20" pointBit = "5" imgNum = "36" maxType = "6">
+    	<rect>
+    		<point x = "4" y = "0"/><point x = "3" y = "0"/><point x = "5" y = "0"/><point x = "6" y = "0"/>
+    	</rect>
+    	<rect>
+    		<point x = "4" y = "0"/><point x = "3" y = "0"/><point x = "5" y = "0"/><point x = "4" y = "1"/>
+    	</rect>
+    	<rect>
+    		<point x = "4" y = "0"/><point x = "3" y = "0"/><point x = "5" y = "0"/><point x = "3" y = "1"/>
+    	</rect>
+    	<rect>
+    		<point x = "4" y = "0"/><point x = "3" y = "1"/><point x = "4" y = "1"/><point x = "5" y = "0"/>
+    	</rect>
+    	<rect>
+    		<point x = "4" y = "0"/><point x = "5" y = "0"/><point x = "4" y = "1"/><point x = "5" y = "1"/>
+    	</rect>
+    	<rect>
+    		<point x = "4" y = "0"/><point x = "3" y = "0"/><point x = "5" y = "0"/><point x = "5" y = "1"/>
+    	</rect>
+    	<rect>
+    		<point x = "4" y = "0"/><point x = "3" y = "0"/><point x = "4" y = "1"/><point x = "5" y = "1"/>
+    	</rect>
+    </system>
+    
+    <data maxRow = "5" >
+    	<dataA class = "dao.WorldData" >
+    		<param key = "url" value = "http://abcio.sinaapp.com/tetris" />
+    		<param key = "token" value = "b95e4a6e19713dadc97079a86ed37f8a" />
+    	</dataA>
+    	<dataB class = "dao.LocalData" >
+    		<param key = "path" value = "data/recode.dat" />
+    	</dataB>
+    </data>
+</game>
